@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}UserBundle:Post:UserIndex{% endblock %}
+
+{% block body %}
+<h1>Welcome to the UserIndex PAGE</h1>
+<form method="POST" name="login">
+<p>login:</p> <input id="FormInput" name="login"><br>
+<p>passoword:</p> <input id="FormInput" type="password" name="password"><br>
+<input id="ConfirmationButton" type="submit" value="Submit">
+</form>
+{% endblock %} 
