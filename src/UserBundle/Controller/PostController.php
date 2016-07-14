@@ -53,7 +53,7 @@ class PostController extends Controller
 	$user->setFirstName('Beatowa');
 
 	$form = $this->createFormBuilder($user)
-		->add('login', TextType::class)
+		->add('login', TextType::class, array('label' => 'login'))
 		->add('firstName', TextType::class)
 		->add('Submit', SubmitType::class)
 		->getForm();

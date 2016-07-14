@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}UserBundle:Post:UserIndex{% endblock %}
+
+{% block body %}
+<h1>Dołącz do naszego portalu</h1>
+<h2> Wypełnij poniższy formularz</h2>
+<form method="POST" name="login">
+<p>login:</p> <input id="FormInput" name="login"><br>
+<p>passoword:</p> <input id="FormInput" type="password" name="password"><br>
+<p>repeat passoword:</p> <input id="FormInput" type="password" name="repeatPassword"><br>
+<p>first name:</p> <input id="FormInput" name="firstName"><br>
+<p>last name:</p> <input id="FormInput" name="lastName"><br>
+<p>email:<p style="color:red">* Required to confirm your account</p></p>
+<input id="FormInput" name="firstName">
+<p></p><br>
+<input id="ConfirmationButton" type="submit" value="Submit">
+</form>
+
+{{ form(form) }}
+{% endblock %} 
